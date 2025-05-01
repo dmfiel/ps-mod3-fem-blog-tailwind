@@ -43,7 +43,7 @@ button {
   padding: 4px 12px;
   border-radius: 4px;
   border: 0px none;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 800;
   line-height: 150%;
   width: 82px;
@@ -87,7 +87,7 @@ h2 {
   margin: 0;
   color: var(--Gray-950);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 150%;
 }
 p {
@@ -101,7 +101,7 @@ h3 {
   margin: 0;
   color: var(--Gray-950);
   font-weight: 800;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 h3:hover,
 h3:focus {
@@ -121,7 +121,6 @@ h3:focus {
   main {
     width: 279px;
   }
-
   main img {
     border-radius: 10px;
     height: 200px;
@@ -129,17 +128,17 @@ h3:focus {
     object-fit: cover;
   }
   button {
-    font-size: 12px;
+    font-size: 0.75rem;
     width: 73px;
     box-shadow: 0px 4px 4px #00000040;
   }
   h2 {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   h1 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   p {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
