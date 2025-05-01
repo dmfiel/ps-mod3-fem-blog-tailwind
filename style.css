@@ -49,6 +49,10 @@ button {
   width: 82px;
   font-family: 'Figtree', sans-serif;
 }
+button:hover,
+button:focus {
+  outline: 2px solid black;
+}
 
 main img {
   border-radius: 10px;
@@ -74,6 +78,11 @@ h1 {
   font-size: 1.5rem;
   line-height: 150%;
 }
+h1:hover,
+h1:focus {
+  color: var(--Yellow);
+}
+
 h2 {
   margin: 0;
   color: var(--Gray-950);
@@ -94,6 +103,11 @@ h3 {
   font-weight: 800;
   font-size: 14px;
 }
+h3:hover,
+h3:focus {
+  color: var(--Yellow);
+}
+
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
