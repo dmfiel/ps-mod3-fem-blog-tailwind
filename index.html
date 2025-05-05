@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-[100%]">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,34 +10,54 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tailwind.css" />
     <title>Frontend Mentor | Blog preview card</title>
   </head>
-  <body>
-    <main>
+  <body
+    class="h-[100%] flex flex-col gap-[30px] justify-center items-center bg-yellow font-figtree"
+  >
+    <main
+      class="flex flex-col gap-[24px] p-[24px] rounded-[20px] w-[327px] md:w-[384px] bg-white border-gray-950 border"
+    >
       <img
+        class="rounded-[10px] w-[279px] md:w-[336px] h-[200px]"
         src="/assets/images/illustration-article.svg"
         alt="Stylized graphic of HTML code"
       />
-      <div class="details">
-        <button>Learning</button>
-        <h2>Published 21 Dec 2023</h2>
-        <h1>HTML & CSS foundations</h1>
-        <p>
+      <div class="details flex flex-col gap-[12px]">
+        <button
+          class="rounded-[4px] py-[4px] px-[12px] w-[73px] md:w-[82px] bg-yellow text-black text-xs md:text-sm font-extrabold border-0 border-none"
+        >
+          Learning
+        </button>
+        <h2 class="text-gray-950 text-xs md:text-sm font-medium">
+          Published 21 Dec 2023
+        </h2>
+        <h1
+          class="text-gray-950 text-xl md:text-2xl font-extrabold hover:text-yellow focus:text-yellow"
+        >
+          HTML & CSS foundations
+        </h1>
+        <p class="text-gray-500 text-sm md:text-base font-medium">
           These languages are the backbone of every website, defining structure,
           content, and presentation.
         </p>
       </div>
-      <div class="author">
+      <div class="author flex gap-[12px] items-center">
         <img
+          class="h-[32px] w-[32px]"
           src="assets/images/image-avatar.webp"
           alt="Greg Hooper's profile picture"
         />
-        <h3>Greg Hooper</h3>
+        <h3
+          class="text-gray-950 text-sm font-extrabold hover:text-yellow focus:text-yellow"
+        >
+          Greg Hooper
+        </h3>
       </div>
     </main>
 
-    <footer class="attribution" role="contentinfo">
+    <footer class="attribution text-center" role="contentinfo">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a

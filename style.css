@@ -1,146 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
-
-:root {
-  --White: #ffffff;
-  --Yellow: hsl(47, 88%, 63%);
-  --Gray-500: hsl(0, 0%, 42%);
-  --Gray-950: hsl(0, 0%, 7%);
-}
-
-html {
-  height: 100%;
-}
-body {
-  height: 100%;
-  background-color: var(--Yellow);
-  font-family: 'Figtree', sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+@import 'tailwindcss';
+@theme {
+  --color-yellow: hsl(47, 88%, 63%);
+  --font-figtree: 'Figtree', sans-serif;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-  background-color: var(--White);
-  width: 336px;
-  gap: 24px;
-  border: 1px solid var(--Gray-950);
-  border-radius: 20px;
   box-shadow: 8px 8px black;
 }
-
-div.details {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+main img {
+  object-fit: cover;
 }
 
-button {
-  background-color: var(--Yellow);
-  color: black;
-  padding: 4px 12px;
-  border-radius: 4px;
-  border: 0px none;
-  font-size: 0.875rem;
-  font-weight: 800;
-  line-height: 150%;
-  width: 82px;
-  font-family: 'Figtree', sans-serif;
-}
 button:hover,
 button:focus {
   outline: 2px solid black;
 }
 
-main img {
-  border-radius: 10px;
-  height: 200px;
-  width: 336px;
-}
-
-div.author {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-  align-items: center;
-}
-div.author img {
-  height: 32px;
-  width: 32px;
-}
-
-h1 {
-  margin: 0;
-  color: var(--Gray-950);
-  font-weight: 800;
-  font-size: 1.5rem;
+h1,
+h2,
+p,
+button {
   line-height: 150%;
-}
-h1:hover,
-h1:focus {
-  color: var(--Yellow);
-}
-
-h2 {
-  margin: 0;
-  color: var(--Gray-950);
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 150%;
-}
-p {
-  margin: 0;
-  font-size: 1rem;
-  color: var(--Gray-500);
-  font-weight: 500;
-  line-height: 150%;
-}
-h3 {
-  margin: 0;
-  color: var(--Gray-950);
-  font-weight: 800;
-  font-size: 0.875rem;
-}
-h3:hover,
-h3:focus {
-  color: var(--Yellow);
 }
 
 .attribution {
   font-size: 0.6875rem;
-  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
 /* For mobile and narrow screens, switch to a vertical view */
-@media screen and (max-width: 800px) {
-  main {
-    width: 279px;
-  }
-  main img {
-    border-radius: 10px;
-    height: 200px;
-    width: 279px;
-    object-fit: cover;
-  }
+@media screen and (max-width: 768px) {
   button {
-    font-size: 0.75rem;
-    width: 73px;
     box-shadow: 0px 4px 4px #00000040;
-  }
-  h2 {
-    font-size: 0.75rem;
-  }
-  h1 {
-    font-size: 1.25rem;
-  }
-  p {
-    font-size: 0.875rem;
   }
 }
